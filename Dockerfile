@@ -5,4 +5,4 @@ RUN apt-get install -y python3-pip
 
 COPY run.py run.py
 
-CMD ["python3", "C:/Users/ketan.2110850/PycharmProjects/Demo/run.py"]
+CMD ["python3", "run.py"]
