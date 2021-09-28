@@ -9,10 +9,10 @@ RUN apt-get update -y && \
   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
   dpkg -i google-chrome-stable_current_amd64.deb; apt-get -fy install
 
-## install chromedriver and place it in path
-#RUN wget https://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip && \
-#    unzip chromedriver_linux64.zip && \
-#    mv chromedriver /usr/local/bin/
+# install chromedriver and place it in path
+RUN wget https://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip && \
+    unzip chromedriver_linux64.zip && \
+    mv chromedriver /usr/local/bin/
 
 COPY run.py run.py
 
