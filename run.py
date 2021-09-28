@@ -1,6 +1,12 @@
-x = 12
-y = 12
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+import time
 
-z = x + y
-print(z)
-print('Run completed!!!! Its ran on DOcker!!! ')
+driver = webdriver.Chrome(ChromeDriverManager().install())
+driver.get('https://google.com')
+driver.maximize_window()
+time.sleep(2)
+driver.close()
+print('Execution finshed')
+
+
