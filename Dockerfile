@@ -18,6 +18,6 @@ RUN apt-get install ./google-chrome-stable_current_amd64.deb
 # RUN  mv chromedriver /usr/bin/chromedriver
 # RUN chmod +x /usr/bin/chromedriver
 
-COPY run.py run.py
+ADD . run.py
 
 CMD ["python3", "run.py"]
