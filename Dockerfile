@@ -6,6 +6,7 @@ RUN pip3 install selenium
 RUN pip3 install webdriver-manager
 
 # install chrome
+RUN apt-get install wget
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN apt-get install ./google-chrome-stable_current_amd64.deb
 
