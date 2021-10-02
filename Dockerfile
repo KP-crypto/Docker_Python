@@ -24,4 +24,4 @@ RUN apt-get install -y wget && \
 
 COPY . .
 
-CMD ["python3", "run.py"]
+CMD ["python3", "./run.py"]
