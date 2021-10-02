@@ -2,8 +2,7 @@ FROM ubuntu:18.04
 
 RUN apt-get update
 RUN apt-get install -y python3-pip
-RUN pip3 install selenium
-RUN pip3 install webdriver-manager
+COPY requirements.txt .
 
 # install chrome
 RUN apt-get install wget
@@ -22,6 +21,6 @@ RUN apt-get install wget
 # RUN  mv chromedriver /usr/bin/chromedriver
 # RUN chmod +x /usr/bin/chromedriver
 
-COPY . run.py
+COPY . .
 
 CMD ["python3", "run.py"]
